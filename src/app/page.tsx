@@ -17,8 +17,6 @@ const navbarLinks = [
 const navbarProps = {
   logoSrc: '/images/logo.svg',
   logoAlt: 'MemeCoin',
-  leftButtonText: 'Menu',
-  rightButtonText: 'Buy MemeCoin',
 };
 
 export default function Home() {
