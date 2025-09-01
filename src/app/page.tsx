@@ -1,5 +1,4 @@
 "use client";
-import { redirect } from 'next/navigation';
 import NavbarBase from '@/components/navigation/NavbarBase';
 import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
 import SplitAbout from '@/components/sections/layouts/about/SplitAbout';
@@ -28,9 +27,9 @@ export default function Home() {
       <NavbarBase navItems={navbarLinks} logoSrc={navbarProps.logoSrc} logoAlt={navbarProps.logoAlt} />
       <BillboardHero title='Welcome to MemeCoin' subtitle='A fun and engaging memecoin for everyone' />
       <SplitAbout description='MemeCoin is designed to bring joy and excitement to crypto trading.' />
-      <HowToBuy3D title='How to Buy MemeCoin' steps={ [ { title: 'Step One', description: 'Create an account on an exchange.', image: '/images/placeholder1.avif', position: 'left', isCenter: false }, { title: 'Step Two', description: 'Purchase MemeCoin using your account.', image: '/images/placeholder2.avif', position: 'center', isCenter: true }, { title: 'Step Three', description: 'Store your MemeCoin in a secure wallet.', image: '/images/placeholder3.avif', position: 'right', isCenter: false }, ] } />
-      <BigNumberTokenomics title='Tokenomics Overview' description='An overview of funding and asset allocation.' kpiItems={ [ { value: '80', description: 'Burn Rate', longDescription: 'Percentage of total supply burned over a year', icon: 'LucideIcon' }, { value: '20', description: 'Circulating Supply', longDescription: 'Current supply available in the market', icon: 'LucideIcon' }, ] } />
-      <FooterLogoEmphasisBackgroundGradient logoSrc='/images/logo.svg' logoAlt='MemeCoin Logo' logoText='MemeCoin' items={[ { label: 'Privacy Policy', onClick: () => {} }, { label: 'Terms of Service', onClick: () => {} }, { label: 'Contact Us', onClick: () => {} }, ]} />
+      <HowToBuy3D title='How to Buy MemeCoin' steps={[{ title: 'Step One', description: 'Create an account on an exchange.', image: '/images/placeholder1.avif', position: 'left', isCenter: false }, { title: 'Step Two', description: 'Purchase MemeCoin using your account.', image: '/images/placeholder2.avif', position: 'center', isCenter: true }, { title: 'Step Three', description: 'Store your MemeCoin in a secure wallet.', image: '/images/placeholder3.avif', position: 'right', isCenter: false }]} />
+      <BigNumberTokenomics title='Tokenomics Overview' description='An overview of funding and asset allocation.' kpiItems={[{ value: '80', description: 'Burn Rate', longDescription: 'Percentage of total supply burned over a year', icon: 'LucideIcon' }, { value: '20', description: 'Circulating Supply', longDescription: 'Current supply available in the market', icon: 'LucideIcon' }]} />
+      <FooterLogoEmphasisBackgroundGradient logoSrc='/images/logo.svg' logoAlt='MemeCoin Logo' logoText='MemeCoin' items={[{ label: 'Privacy Policy', onClick: () => {} }, { label: 'Terms of Service', onClick: () => {} }, { label: 'Contact Us', onClick: () => {} }]} />
     </>
   );
 }
