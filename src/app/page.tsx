@@ -1,4 +1,4 @@
-use client
+"use client";
 import { redirect } from 'next/navigation';
 import NavbarBase from '@/components/navigation/NavbarBase';
 import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
